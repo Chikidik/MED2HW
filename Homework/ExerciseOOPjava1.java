@@ -22,15 +22,15 @@ public class ExerciseOOPjava1 {
 }
 
 class Account{
-private int id = 0;
-private double balance = 0.0;
-private double annualInterestRate = 0.0;
+private int id;
+private double balance;
+private double annualInterestRate;
 private Date dateCreated;
 
         public Account(){
         this.dateCreated = new java.util.Date();
-        this.id = id;
-        this.balance = balance;
+        this.id = 0;
+        this.balance = 0;
         }
         public Account(int id, double balance){
         this.dateCreated = new java.util.Date();
