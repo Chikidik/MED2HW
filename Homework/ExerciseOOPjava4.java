@@ -1,3 +1,10 @@
+/*
+@Chi Khoa Martin Nguyen
+https://github.com/Chikidik
+TO DO:
+Find a way to close while loop other than iterations.
+
+*/
 import java.util.Random;
 import java.util.Scanner;
 public class ExerciseOOPjava4{
