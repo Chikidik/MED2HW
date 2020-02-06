@@ -9,7 +9,6 @@ public class ExerciseOOPjava2{
         System.out.println("X is = "+p2.getX());
         System.out.println("Y is = "+p2.getY());
         System.out.println(p1.distance(p2));
-        System.out.println(p1.distance(1,0));
         System.out.println(distance(p3,p1));
         
         
@@ -39,23 +38,24 @@ class MyPoint{
         this.y = y;
     }
 
-    double getX(){
+    public double getX(){
         return x;
     }
-    double getY(){
+    public double getY(){
         return y;
     }
-    void setX(double x){
+    public void setX(double x){
         this.x = x;
     }
-    void setY(double y){
+    public void setY(double y){
         this.y = y;
     }
-    double distance(double x, double y){
+    public double distance(double x, double y){
         return Math.sqrt((this.x - x)* (this.x - x)+(this.y-y)* (this.y-y));
     }
-    double distance(MyPoint point){
+    
+    public double distance(MyPoint point){
         return distance(point.x, point.y);
-
+    
     }
 }
