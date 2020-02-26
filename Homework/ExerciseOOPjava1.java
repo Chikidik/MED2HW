@@ -1,10 +1,13 @@
 import java.util.Date;
+import java.util.Scanner;
 /*
 Chi Khoa Martin Nguyen
 
 */
 public class ExerciseOOPjava1 {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int test = input.nextInt();
         Account ac = new Account();
         System.out.println("Balance: $" + ac.getBalance());
         System.out.println("Monthly Interest: " + ac.getMonthlyInterest());
@@ -12,12 +15,12 @@ public class ExerciseOOPjava1 {
 
         Account account = new Account (1122, 20000);
         account.setAnnualInterestRate(4.5);
-        account.withdraw(2500.0);
+        account.withdraw(test);
         account.deposit(3000.0);
         System.out.println("Balance: $" + account.getBalance());
         System.out.println("Monthly Interest: " + account.getMonthlyInterest());
         System.out.println("Date Created: " + account.getDateCreated());
-
+        input.close();
     }
 }
 
